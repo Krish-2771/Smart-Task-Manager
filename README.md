@@ -1,63 +1,67 @@
-# 🧠 AI-Based Smart Task Management System
+AI Smart Task Manager (MERN)
 
-A full-stack MERN application with Admin/User dashboards, JWT auth, AI productivity insights, and rich analytics.
+AI-powered task management system with role-based dashboards, secure authentication, analytics, and productivity insights. Built using the MERN stack for portfolio and academic use.
 
-## 🚀 Quick Start
+Features :
+1. JWT authentication and role-based access (User/Admin)
+2. Task creation, editing, deletion, and tracking
+3. Admin panel for managing users and system analytics
+4. Productivity analytics with charts
+5. AI-generated task productivity suggestions
+6. Tech Stack
 
-### Prerequisites
-- Node.js >= 18
-- MongoDB (local or Atlas)
+Frontend :
+React 18 + Vite
+Tailwind CSS
+Recharts
+Axios
 
-### 1. Clone & Setup
+Backend :
+Node.js
+Express.js
+MongoDB + Mongoose
+JWT Authentication
+bcrypt
 
-```bash
-git clone <your-repo>
+Project Structure :
+
+smart-task-manager/
+├── client/    # React frontend
+└── server/    # Node/Express backend
+
+Setup
+
+1. Clone the repository :
+git clone https://github.com/your-username/smart-task-manager.git
 cd smart-task-manager
-```
 
-### 2. Backend Setup
-
-```bash
+2. Backend
 cd server
 npm install
-cp .env.example .env   # Fill in your values
+cp .env.example .env
 npm run dev
-```
 
-### 3. Frontend Setup
-
-```bash
+4. Frontend
 cd client
 npm install
 npm run dev
-```
 
-App runs at: `http://localhost:5173`  
-API runs at: `http://localhost:5000`
+Frontend: http://localhost:5173
 
-## 📁 Project Structure
+Backend: http://localhost:5000
 
-```
-smart-task-manager/
-├── client/          # React + Vite frontend
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── context/
-│       ├── hooks/
-│       └── utils/
-├── server/          # Node + Express backend
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── controllers/
-└── README.md
-```
+Environment Variables
+Create server/.env:
 
-## 🔐 Default Roles
-- **User** – Manage own tasks, view analytics
-- **Admin** – Full system access, user management
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
 
-## 🛠 Tech Stack
-- **Frontend**: React 18, Vite, Tailwind CSS, Recharts, Axios
-- **Backend**: Node.js, Express, MongoDB, Mongoose, JWT, bcrypt
+Future Improvements :
+1. Email notifications
+2. Real-time collaboration
+3. Calendar integration
+4. PWA support
+   
+License:
+MIT License
